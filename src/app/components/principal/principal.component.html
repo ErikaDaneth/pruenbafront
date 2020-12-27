@@ -1,0 +1,259 @@
+<style>
+   
+    #formulario {
+        background-color: #b0d5f8;
+    }
+    ul{
+      margin: 0;
+      padding: 0;
+  }
+ 
+  header{
+      background-color: #24282b;
+      color:#fff;
+      padding-top: 30px;
+      min-height: 70px;
+  }
+  
+  
+  header a{
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 16px;
+  }
+  
+  
+  header #marca{
+      float: left;
+  }
+  
+  header #marca h1{
+      margin: 0;
+  }
+  
+  header nav{
+      float: right;
+      margin-top: 10px;
+  }
+  
+  header .actual a{
+      color: #0dc1ab;
+      font-weight: bold;
+  }
+  
+  header a:hover{
+      color: #ccc;
+      font-weight: bold;
+  }
+  nav{
+      top:-20px;
+      position: absolute;
+      left: 0;
+      right:0;
+      margin: 20px auto;
+      width: 40%;
+      max-width: 1000px;
+  
+  
+  }
+  nav ul{
+      list-style: none;
+  }
+  
+  nav > ul{
+      margin-top: 25px;
+      display: table;
+      width: 150%;
+  
+      /*background: #000;*/
+      position: relative;
+  }
+  nav > ul li{
+      display: table-cell;
+  }
+  nav > ul li{
+      display: table-cell;
+  }
+  nav>ul>li:hover>ul{
+      display: block;
+      height: 190%;
+  }
+  
+  nav > ul > li > ul {
+      display: block;
+      position: absolute;
+      background: #0dc1ab;
+      left:0;
+      right:0;
+      overflow: hidden;
+      height: 0%;
+      -webkit-transition: all .3s ease;
+      -moz-transition: all .3s ease;
+      -ms-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease;
+  }
+  nav > ul li a{
+      color:#fff;
+      display: block;
+      line-height: 20px;
+      padding: 20px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      -webkit-transition: all .3s ease;
+      -moz-transition: all .3s ease;
+      -ms-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease;
+  }
+  nav > ul > li > ul > li a:hover
+  {
+      background: #5da4a2;
+  }
+
+  input{
+	width: 30%;
+	height: 25px;
+	border: 1px solid gray;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+
+input[type="submit"]{
+	background-color: #0dc1ab
+}
+table, th, td{
+    border: 1px solid black; 
+    border-collapse: collapse;
+}
+th,td{
+    padding: 10px;
+}
+th{
+    text-align: left;
+}
+
+  </style>
+  <header>
+    <div class="contenedor">
+      <div id="marca">
+        <h1>Alquiler de autos	</h1>
+      </div>
+  <nav>
+    <ul >
+      <li class="actual"><a href="app.component.html">Inicio</a></li>
+      <li ><a href="formulario">Alquiler</a></li>
+      <li ><a href="login.component.html">Iniciar Sesión</a></li>
+    </ul>
+  </nav>
+    </div>
+  </header>
+  <img
+  width="1332"
+  height="550"
+  alt="Angular Logo"
+  src="https://www.acuant.com/wp-content/uploads/2016/01/holiday-car-rental.jpg"
+  />
+  <section id= "tabla"> 
+    <h1> Disponiblidad de vehiculos </h1>
+    <table style="width: 100%;"> 
+        <tr>
+            <th>Imagen</th>
+            <th >Modelo 
+            </th>
+            <th>Pasajero</th>
+            <th>Precio</th>
+            <th>Gasolina/Diesel</th>
+        </tr>
+        <tr> 
+            <td >
+                <input type="checkbox">
+                <img 
+                width="100"
+                height="80"
+                src="https://www.carscoops.com/wp-content/uploads/2018/01/Mitsubishi-L200-01-1.jpg"/></td>
+            <td> Mitsubishi L200
+            </td>
+            <td> 5 </td>
+            <td> 60 </td>
+            <td> Diesel </td>
+        </tr>
+        <tr> 
+            <td>
+                <input type="checkbox">
+                <img 
+                width="100"
+                height="80"
+                src="https://carsguide-res.cloudinary.com/image/upload/f_auto%2Cfl_lossy%2Cq_auto%2Ct_default/v1/editorial/2018-Hyundai-Elantra-review-white-1001x565p%20%2815%29.jpg"/></td>
+            <td> Hyundai Elantra</td>
+            <td> 5 </td>
+            <td> 40 </td>
+            <td> Gasolina </td>
+        </tr>
+        <tr> 
+            <td >
+                <input type="checkbox">
+                <img 
+                width="100"
+                height="80"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/2014_Hyundai_Accent_(RB2_MY14)_Active_sedan_(2015-08-07)_01.jpg/1200px-2014_Hyundai_Accent_(RB2_MY14)_Active_sedan_(2015-08-07)_01.jpg"/></td>
+            <td> Hyundai accent</td>
+            <td> 5 </td>
+            <td> 40 </td>
+            <td> Gasolina </td>
+        </tr>
+        <tr> 
+            <td >
+                <input type="checkbox">
+                <img 
+                width="100"
+                height="80"
+                src="http://images.newcars.com/images/car-pictures/original/2015-Toyota-Corolla-Sedan-L-4dr-Sedan-Photo-3.png"/></td>
+            <td>Toyota Corolla</td>
+                <td> 5 </td>
+            <td> 40 </td>
+            <td> Gasolina </td>
+        </tr>
+        <tr> 
+            <td>
+                <input type="checkbox">
+                <img 
+            width="100"
+        height="80"
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Mitsubishi_Lancer_EVO_X.jpg/1920px-Mitsubishi_Lancer_EVO_X.jpg"/></td>
+            <td> Mitsubishi Lancer</td>
+            <td> 5 </td>
+            <td> 50 </td>
+            <td> Gasolina </td>
+        </tr>
+    </table>
+  </section>
+
+
+<section id= "formulario">
+    <h1> Solicitud de alquiler de vehiculo </h1>
+<form [formGroup]="registroForm" >
+    <label>Nombre</label>
+    <input formControlName="Nombre" type="text"/> 
+    <br/>
+    <label>Apellido</label>
+    <input formControlName="Apellido"type= "text"/>
+    <br/>
+    <label>Email</label>
+    <input formControlName="Email"type= "text"/>
+    <br/>
+    <label>Fecha de recogida de auto</label>
+    <input formControlName="recogida" type= "date"/>
+    <br/>
+    <label>Fecha de entrega de auto</label>
+    <input formControlName="salida" type= "date"/>
+    <br/>
+    <button  type="submit">Confirmar</button>
+    
+</form>
+</section>
+
+  
